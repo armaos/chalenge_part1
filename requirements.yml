@@ -1,0 +1,9 @@
+name: imdb_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - postgresql
+  # - psycopg2
+  - aiohttp
+  - asyncpg

@@ -1,0 +1,127 @@
+2025-03-27 17:36:21.728 CET [12440] LOG:  starting PostgreSQL 17.4 on aarch64-apple-darwin20.0.0, compiled by clang version 14.0.6, 64-bit
+2025-03-27 17:36:21.729 CET [12440] LOG:  listening on IPv6 address "::1", port 5432
+2025-03-27 17:36:21.729 CET [12440] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-03-27 17:36:21.730 CET [12440] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-03-27 17:36:21.732 CET [12443] LOG:  database system was shut down at 2025-03-27 17:35:37 CET
+2025-03-27 17:36:21.736 CET [12440] LOG:  database system is ready to accept connections
+2025-03-27 17:36:45.301 CET [12478] FATAL:  role "postgres" does not exist
+2025-03-27 17:37:21.666 CET [12497] FATAL:  lock file "postmaster.pid" already exists
+2025-03-27 17:37:21.666 CET [12497] HINT:  Is another postmaster (PID 12440) running in data directory "/Users/alexandrosarmaos/pgdata"?
+2025-03-27 17:37:21.767 CET [12500] FATAL:  role "postgres" does not exist
+2025-03-27 17:37:40.595 CET [12518] FATAL:  lock file "postmaster.pid" already exists
+2025-03-27 17:37:40.595 CET [12518] HINT:  Is another postmaster (PID 12440) running in data directory "/Users/alexandrosarmaos/pgdata"?
+2025-03-27 17:37:40.691 CET [12520] FATAL:  role "postgres" does not exist
+2025-03-27 17:38:13.124 CET [12533] FATAL:  role "postgres" does not exist
+2025-03-27 17:38:17.304 CET [12544] FATAL:  lock file "postmaster.pid" already exists
+2025-03-27 17:38:17.304 CET [12544] HINT:  Is another postmaster (PID 12440) running in data directory "/Users/alexandrosarmaos/pgdata"?
+2025-03-27 17:38:50.324 CET [12440] LOG:  received fast shutdown request
+2025-03-27 17:38:50.324 CET [12440] LOG:  aborting any active transactions
+2025-03-27 17:38:50.326 CET [12440] LOG:  background worker "logical replication launcher" (PID 12446) exited with exit code 1
+2025-03-27 17:38:50.326 CET [12441] LOG:  shutting down
+2025-03-27 17:38:50.326 CET [12441] LOG:  checkpoint starting: shutdown immediate
+2025-03-27 17:38:50.333 CET [12441] LOG:  checkpoint complete: wrote 47 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.007 s; sync files=11, longest=0.001 s, average=0.001 s; distance=281 kB, estimate=281 kB; lsn=0/1548270, redo lsn=0/1548270
+2025-03-27 17:38:50.336 CET [12440] LOG:  database system is shut down
+2025-03-27 17:39:09.611 CET [12629] LOG:  starting PostgreSQL 17.4 on aarch64-apple-darwin20.0.0, compiled by clang version 14.0.6, 64-bit
+2025-03-27 17:39:09.613 CET [12629] LOG:  listening on IPv6 address "::1", port 5432
+2025-03-27 17:39:09.613 CET [12629] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-03-27 17:39:09.614 CET [12629] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-03-27 17:39:09.616 CET [12632] LOG:  database system was shut down at 2025-03-27 17:38:50 CET
+2025-03-27 17:39:09.619 CET [12629] LOG:  database system is ready to accept connections
+2025-03-27 17:40:41.415 CET [12718] FATAL:  role "postgres" does not exist
+2025-03-27 17:41:04.892 CET [12758] FATAL:  lock file "postmaster.pid" already exists
+2025-03-27 17:41:04.892 CET [12758] HINT:  Is another postmaster (PID 12629) running in data directory "/Users/alexandrosarmaos/pgdata"?
+2025-03-27 17:41:10.178 CET [12629] LOG:  received fast shutdown request
+2025-03-27 17:41:10.178 CET [12629] LOG:  aborting any active transactions
+2025-03-27 17:41:10.180 CET [12629] LOG:  background worker "logical replication launcher" (PID 12635) exited with exit code 1
+2025-03-27 17:41:10.180 CET [12630] LOG:  shutting down
+2025-03-27 17:41:10.180 CET [12630] LOG:  checkpoint starting: shutdown immediate
+2025-03-27 17:41:10.183 CET [12630] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1548320, redo lsn=0/1548320
+2025-03-27 17:41:10.186 CET [12629] LOG:  database system is shut down
+2025-03-27 17:41:18.124 CET [12784] LOG:  starting PostgreSQL 17.4 on aarch64-apple-darwin20.0.0, compiled by clang version 14.0.6, 64-bit
+2025-03-27 17:41:18.126 CET [12784] LOG:  listening on IPv6 address "::1", port 5432
+2025-03-27 17:41:18.126 CET [12784] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-03-27 17:41:18.126 CET [12784] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-03-27 17:41:18.129 CET [12787] LOG:  database system was shut down at 2025-03-27 17:41:10 CET
+2025-03-27 17:41:18.133 CET [12784] LOG:  database system is ready to accept connections
+2025-03-27 17:41:20.929 CET [12801] FATAL:  role "postgres" does not exist
+2025-03-27 17:41:59.112 CET [12826] FATAL:  database "alexandrosarmaos" does not exist
+2025-03-27 17:42:09.288 CET [12838] FATAL:  database "alexandrosarmaos" does not exist
+2025-03-27 17:42:34.567 CET [12859] FATAL:  role "postgres" does not exist
+2025-03-27 17:42:43.246 CET [12873] FATAL:  role "postgres" does not exist
+2025-03-27 17:43:21.551 CET [12889] FATAL:  database "alexandrosarmaos" does not exist
+2025-03-27 17:44:35.179 CET [12954] FATAL:  lock file "postmaster.pid" already exists
+2025-03-27 17:44:35.179 CET [12954] HINT:  Is another postmaster (PID 12784) running in data directory "/Users/alexandrosarmaos/pgdata"?
+2025-03-27 17:44:45.796 CET [12784] LOG:  received fast shutdown request
+2025-03-27 17:44:45.797 CET [12784] LOG:  aborting any active transactions
+2025-03-27 17:44:45.798 CET [12784] LOG:  background worker "logical replication launcher" (PID 12790) exited with exit code 1
+2025-03-27 17:44:45.799 CET [12785] LOG:  shutting down
+2025-03-27 17:44:45.799 CET [12785] LOG:  checkpoint starting: shutdown immediate
+2025-03-27 17:44:45.801 CET [12785] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/15483D0, redo lsn=0/15483D0
+2025-03-27 17:44:45.804 CET [12784] LOG:  database system is shut down
+2025-03-27 17:45:03.649 CET [13006] LOG:  starting PostgreSQL 17.4 on aarch64-apple-darwin20.0.0, compiled by clang version 14.0.6, 64-bit
+2025-03-27 17:45:03.650 CET [13006] LOG:  listening on IPv6 address "::1", port 5432
+2025-03-27 17:45:03.650 CET [13006] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-03-27 17:45:03.651 CET [13006] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-03-27 17:45:03.653 CET [13009] LOG:  database system was shut down at 2025-03-27 17:44:45 CET
+2025-03-27 17:45:03.656 CET [13006] LOG:  database system is ready to accept connections
+2025-03-27 17:45:10.116 CET [13030] FATAL:  role "postgres" does not exist
+2025-03-27 17:45:51.003 CET [13046] FATAL:  role "postgres" does not exist
+2025-03-27 17:46:51.249 CET [13006] LOG:  received fast shutdown request
+2025-03-27 17:46:51.249 CET [13006] LOG:  aborting any active transactions
+2025-03-27 17:46:51.251 CET [13006] LOG:  background worker "logical replication launcher" (PID 13012) exited with exit code 1
+2025-03-27 17:46:51.251 CET [13007] LOG:  shutting down
+2025-03-27 17:46:51.251 CET [13007] LOG:  checkpoint starting: shutdown immediate
+2025-03-27 17:46:51.254 CET [13007] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1548480, redo lsn=0/1548480
+2025-03-27 17:46:51.256 CET [13006] LOG:  database system is shut down
+2025-03-27 17:46:53.910 CET [13081] LOG:  starting PostgreSQL 17.4 on aarch64-apple-darwin20.0.0, compiled by clang version 14.0.6, 64-bit
+2025-03-27 17:46:53.911 CET [13081] LOG:  listening on IPv6 address "::1", port 5432
+2025-03-27 17:46:53.911 CET [13081] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-03-27 17:46:53.911 CET [13081] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-03-27 17:46:53.913 CET [13084] LOG:  database system was shut down at 2025-03-27 17:46:51 CET
+2025-03-27 17:46:53.915 CET [13081] LOG:  database system is ready to accept connections
+2025-03-27 17:51:23.004 CET [13193] WARNING:  no privileges were granted for "imdb_db"
+2025-03-27 17:51:36.785 CET [13206] ERROR:  permission denied for schema public at character 14
+2025-03-27 17:51:36.785 CET [13206] STATEMENT:  CREATE TABLE title_basics (
+	    tconst VARCHAR PRIMARY KEY,
+	    titleType VARCHAR,
+	    primaryTitle VARCHAR,
+	    originalTitle VARCHAR,
+	    isAdult BOOLEAN,
+	    startYear INTEGER,
+	    endYear INTEGER,
+	    runtimeMinutes INTEGER,
+	    genres VARCHAR
+	);
+2025-03-27 17:51:43.922 CET [13206] ERROR:  permission denied for schema public at character 14
+2025-03-27 17:51:43.922 CET [13206] STATEMENT:  CREATE TABLE title_basics (
+	    tconst VARCHAR PRIMARY KEY,
+	    titleType VARCHAR,
+	    primaryTitle VARCHAR,
+	    originalTitle VARCHAR,
+	    isAdult BOOLEAN,
+	    startYear INTEGER,
+	    endYear INTEGER,
+	    runtimeMinutes INTEGER,
+	    genres VARCHAR
+	);
+2025-03-27 17:51:53.916 CET [13082] LOG:  checkpoint starting: time
+2025-03-27 17:53:29.179 CET [13082] LOG:  checkpoint complete: wrote 945 buffers (5.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=95.245 s, sync=0.016 s, total=95.264 s; sync files=316, longest=0.001 s, average=0.001 s; distance=4308 kB, estimate=4308 kB; lsn=0/C06D798, redo lsn=0/197D7E0
+2025-03-27 17:56:13.997 CET [13082] LOG:  checkpoint starting: immediate force wait
+2025-03-27 17:56:14.002 CET [13082] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 11 recycled; write=0.001 s, sync=0.001 s, total=0.005 s; sync files=2, longest=0.001 s, average=0.001 s; distance=170945 kB, estimate=170945 kB; lsn=0/C06DCE8, redo lsn=0/C06DC90
+2025-03-27 18:01:13.480 CET [13082] LOG:  checkpoint starting: time
+2025-03-27 18:05:43.083 CET [13082] LOG:  checkpoint complete: wrote 9037 buffers (55.2%); 0 WAL file(s) added, 0 removed, 10 recycled; write=269.583 s, sync=0.012 s, total=269.603 s; sync files=314, longest=0.001 s, average=0.001 s; distance=175095 kB, estimate=175095 kB; lsn=0/16B6BAA8, redo lsn=0/16B6BA18
+2025-03-27 18:38:30.118 CET [14599] ERROR:  syntax error at or near "ORDER" at character 299
+2025-03-27 18:38:30.118 CET [14599] STATEMENT:  
+	            SELECT tb.tconst, tb.primaryTitle, tb.genres, tb.startYear, tb.runtimeMinutes, tr.averageRating
+	            FROM title_basics tb
+	            LEFT JOIN title_ratings tr ON tb.tconst = tr.tconst
+	            WHERE tb.titleType = 'movie'
+	            ORDER BY tb.startYear DESC
+	            ORDER BY tb.primaryTitle DESC
+	        
+2025-03-27 20:39:13.167 CET [13081] LOG:  received smart shutdown request
+2025-03-27 20:39:13.172 CET [13081] LOG:  background worker "logical replication launcher" (PID 13087) exited with exit code 1
+2025-03-27 20:39:13.172 CET [13082] LOG:  shutting down
+2025-03-27 20:39:13.173 CET [13082] LOG:  checkpoint starting: shutdown immediate
+2025-03-27 20:39:13.181 CET [13082] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.009 s; sync files=1, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=157585 kB; lsn=0/16B6BB58, redo lsn=0/16B6BB58
+2025-03-27 20:39:13.208 CET [13081] LOG:  database system is shut down

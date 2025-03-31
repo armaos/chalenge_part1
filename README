@@ -1,0 +1,22 @@
+## FOR using with conda
+#create the conda enviroment
+conda env create -f environment.yml
+conda activate imdb_env
+
+#initialize the  cluster
+initdb -D ~/pgdata
+
+#Start the server from the same environment:
+pg_ctl -D ~/pgdata -l logfile start
+
+# check if the server is running with:
+pg_ctl -D ~/pgdata status
+
+# set up the database
+./run_setup.sh
+
+
+
+
+## FOR using with docker
+docker-compose up
