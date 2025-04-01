@@ -19,4 +19,5 @@ pg_ctl -D ~/pgdata status
 
 
 ## FOR using with docker
+docker-compose build
 docker-compose up
