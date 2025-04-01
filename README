@@ -17,7 +17,34 @@ pg_ctl -D ~/pgdata status
 
 
 
-
 ## FOR using with docker
 docker-compose build
 docker-compose up
+
+
+## POST movie:
+curl -X POST http://localhost:8080/movies \
+     -H "Content-Type: application/json" \
+     -d '{
+           "tconst": "tt012345671",
+           "title": "Example Movie",
+           "genre": "Action,Comedy",
+           "year": 2020,
+           "rating": 17.5,
+           "runtime": 120
+         }'
+
+# Sort by rating ascending
+http://localhost:8080/movies?sort=averagerating
+
+# Sort by rating descending
+http://localhost:8080/movies?sort=averagerating,desc
+
+# Get movies with keyset pagination with cursor on startyear=1909 and tconst=tt0000941
+http://localhost:8080/movies?after=1909,tt0000941
+
+# Sort by rating , limit to 2 resutls and with keyset pagination with cursor on averagerating=4.6 and tconst=tt0000941
+http://localhost:8080/movies?sort=averagerating&limit=2&after=4.6,tt0000941
+
+# Sort by rating descending and with rating at least 8
+http://0.0.0.0:8080/movies?sort=averagerating,desc&rating_gt=8
