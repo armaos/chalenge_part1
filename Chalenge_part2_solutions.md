@@ -98,14 +98,13 @@ FROM file_processing_events fpe
 LEFT JOIN flat_tags ft ON DATE(fpe.event_time) = ft.event_date
 LEFT JOIN summary_event_day se ON DATE(fpe.event_time) = se.event_date
 GROUP BY DATE(fpe.event_time)
-ORDER BY event_date
-LIMIT 1;
+ORDER BY event_date;
 ```
 
 
 ## Questions
 # Did you need to do any assumptions because of any ambiguity or any edge cases?
-We can have more that one cases(event_id) on one same day that all have same processing_time_ms and HTSGET source label. To avoid that scenario, I first computied the sum(weights) for all event_ids and then i selected as sum(weights) of the day, teh maximum among them. This happens in the summary_event_day table that gets the max among event_ids of the same day from the summary_event table.
+***Edge case:*** We can have more that one cases(event_id) on one same day that all have same processing_time_ms and HTSGET source label. To avoid that scenario, I first computed the sum(weights) for all event_ids and then i selected as the sum(weights) of the day, the maximum among those events. This happens in the summary_event_day table that gets the max among event_ids of the same day as provided by the summary_event table.
 
 # Have you encountered any errors during the development? Can you describe which ones and what did you do to solve them?
 Syntax errors as always.
@@ -113,7 +112,7 @@ Logical errors as for instance in the last query, I had to do again MAX(sum_weig
 
 # Would you create any indexes on the table? Which ones and why?
 I would create an INDEX on the day: DATE(event_time) , since i have been using that variable a lot to GROUP BY and ORDER
-CREATE INDEX idx_file_processing_events_event_date ON file_processing_events (DATE(event_time));
+```CREATE INDEX idx_file_processing_events_event_date ON file_processing_events (DATE(event_time)) ; ```
 
 
 # If we were going to create a graph on a website with the event_date, average_processing_time and total_bytes_cumulative, would you modify something? HINT: Think about how many results you got
