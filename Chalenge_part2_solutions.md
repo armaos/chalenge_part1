@@ -1,31 +1,32 @@
 ## Preparation
 
 # conda enviroment with postgres 15 installed
-conda create -n pg15_env postgresql=15 -c conda-forge
-conda activate pg15_env
+```conda create -n pg15_env postgresql=15 -c conda-forge```
+```conda activate pg15_env```
 
 
 # Initialize the database cluster (first time only):
-initdb -D ~/pg15data
+```initdb -D ~/pg15data```
 #  Start the PostgreSQL server:
-pg_ctl -D ~/pg15data start
+```pg_ctl -D ~/pg15data start```
 
 # create database:
-createdb files_challenge2
+```createdb files_challenge2```
 
 # execute script to insert data into tables
-psql -d files_challenge2 -f challenge_test_data.sql
+```psql -d files_challenge2 -f challenge_test_data.sql```
 
 # connect to the db
-psql -d files_challenge2
+```psql -d files_challenge2```
 
 
 
-
+```
 SELECT * FROM file_processing_events LIMIT 1;
 SELECT * FROM file_configurations LIMIT 1;
 SELECT * FROM file_sources LIMIT 1;
 SELECT * FROM priority_thresholds LIMIT 1;
+```
 
 ## Excercise 1 
 SELECT fpe.event_id,
