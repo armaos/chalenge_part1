@@ -4,7 +4,6 @@
 ```conda create -n pg15_env postgresql=15 -c conda-forge```
 ```conda activate pg15_env```
 
-
 # Initialize the database cluster (first time only):
 ```initdb -D ~/pg15data```
 #  Start the PostgreSQL server:
@@ -29,6 +28,7 @@ SELECT * FROM priority_thresholds LIMIT 1;
 ```
 
 ## Excercise 1 
+```
 SELECT fpe.event_id,
 fpe.file_name,
 fpe.event_time,
@@ -41,8 +41,10 @@ ON fpe.file_name = fs.file_name
 LEFT JOIN file_configurations fc 
 ON fc.file_type = COALESCE(fpe.metadata->>'file_type', 'UNKNOWN')
 ORDER BY fpe.event_time;
+```
 
 ## Excercise 2
+```
 WITH flat_tags AS (
   SELECT 
     DATE(event_time) AS event_date,
@@ -98,7 +100,7 @@ LEFT JOIN summary_event_day se ON DATE(fpe.event_time) = se.event_date
 GROUP BY DATE(fpe.event_time)
 ORDER BY event_date
 LIMIT 1;
-
+```
 
 
 ## Questions
@@ -121,5 +123,5 @@ So we can:
 - Create a Materialized View of the query in order to be faster to make the same query again and again while i select different intervals
  ```CREATE MATERIALIZED VIEW daily_summary AS <the sql query above>``` Then I can take fast the intervals like: 
     - 30 days
-    SELECT * FROM daily_summary
-    WHERE event_date >= CURRENT_DATE - INTERVAL '30 days'; 
+    ```SELECT * FROM daily_summary
+    WHERE event_date >= CURRENT_DATE - INTERVAL '30 days'; ```
