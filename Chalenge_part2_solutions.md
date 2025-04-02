@@ -20,7 +20,7 @@
 ```psql -d files_challenge2```
 
 
-
+# Check content of tables
 ```
 SELECT * FROM file_processing_events LIMIT 1;
 SELECT * FROM file_configurations LIMIT 1;
